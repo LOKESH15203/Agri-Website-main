@@ -312,6 +312,7 @@ h2 {
 .header .img {
   left: 700px;
   height: 340px;
+  top: 160px;
   position: relative;
 }
 .header .banner{
