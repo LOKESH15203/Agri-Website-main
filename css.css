@@ -310,23 +310,24 @@ h2 {
   text-align: left;
 }
 .header .img {
-  left: 700px;
-  height: 340px;
+  left: 33vw;
+  height: 40vh;
   top: 160px;
   position: relative;
 }
 .header .banner{
   position: absolute;
-  top: 130px;
-  right: 750px;
-  width: 400px;
+  top: 27vh;
+  right: 45vw;
+  width: 22vw;
 }
 .header .content {
   position: absolute;
   display: flex;
   flex-direction: column;
   text-align: left;
-  right: 650px;
+  bottom: 7vh;
+  right: 30vw;
   transform: translate(-5px, -20px);
 }
 .header .cover_img {
