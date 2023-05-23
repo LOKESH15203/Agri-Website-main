@@ -312,7 +312,7 @@ h2 {
 .header .img {
   left: 33vw;
   height: 40vh;
-  top: 160px;
+  top: 15vh;
   position: relative;
 }
 .header .banner{
@@ -417,21 +417,23 @@ button:hover i {
 .featured p {
   padding: 10px;
 }
+/*######################################################################*/
 /* SWIPER */
 .swiper {
-  width: 750px;
-  height: 385px;
+  width: 70vw;
+  height: 60vh;
   margin: 10px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 .featured .swiper h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #000;
   font-family: 'Nunito', sans-serif;
+  bottom: 6vh;
   transform: translateY(150px);
-  z-index: 90;
+  z-index: 100;
 }
 .swiper-slide {
   position: relative;
