@@ -431,9 +431,13 @@ button:hover i {
   font-size: 1.3em;
   color: #000;
   font-family: 'Nunito', sans-serif;
-  bottom: 6vh;
+  bottom: 17vh;
   transform: translateY(150px);
   z-index: 100;
+}
+.featured .swiper p {
+  font-size: 0.9em;
+  top: 15vh;
 }
 .swiper-slide {
   position: relative;
@@ -469,7 +473,8 @@ button:hover i {
 }
 .swiper-slide img {
   position: relative;
-  width: 150px;
+  width: 20vw;
+  bottom: 17.5vh;
   z-index: 100;
   transform: translateY(-100px);
   transition: all 0.5s;
@@ -477,10 +482,10 @@ button:hover i {
 .swiper-slide:hover img {
   scale: 1.1;
 }
-.swiper-slide img[src="assets/oranges.png"] {
-  border-radius: 56% 44% 32% 68% / 48% 34% 66% 52%;
+.swiper-slide img[src="assets/img_6.png"] {
+  border-radius: 5% 5% 0% 0%;
   transform: translateY(-120px);
-  width: 130px;
+  width: 22vw;
 }
 .swiper-slide img[src="assets/watermelon.png"] {
   transform: translateY(-170px);
