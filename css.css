@@ -19,7 +19,7 @@
   --hover-color: #bb3333;
   --dark-color: #095000;
   --bg-color: #b3ffa2;
-  --bg-color-header: #56a944d3;
+  --bg-color-header: ;
   --header-change-color: #b8eba6d7;
 
 }
@@ -378,10 +378,39 @@ button:hover i {
   width: 100%;
   text-align: center;
   background: var(--bg-color);
+  text-decoration: none;
 }
 .about h2 {
+  color: #09a868;
+  font-size: 6em;
   margin: 0.4em;
+  font-family: 'Alkatra';
 }
+.links{
+  text-align: center;
+  display: contents;
+  text-decoration: none;
+}
+a:link{
+  text-decoration: none!important;
+
+}
+.links  a:link, a:visited {
+    background-color:#b3f78b;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 23px;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+  }
+
 .about .content {
   justify-content: center;
   align-items: center;
@@ -414,6 +443,13 @@ button:hover i {
   text-align: center;
   background: var(--bg-color);
 }
+.featured h2 {
+  padding: 50px 5px 5px 5px;
+  color: #09a868;
+  font-size: 6em;
+  margin: 0.4em;
+  font-family: 'Alkatra';
+}
 .featured p {
   padding: 10px;
 }
@@ -426,7 +462,10 @@ button:hover i {
   justify-content: center;
   align-items: center;
   display: flex;
-}.swiper-slide img {
+  position: absolute;
+  bottom: 5vh;
+}
+.swiper-slide img {
   position: absolute;
   height: 20vh;
   bottom: 23.2vh;
@@ -436,10 +475,10 @@ button:hover i {
   transition: all 0.5s;
 }
 .featured .swiper h2 {
-  font-size: 1.7em;
-  color: #000;
-  font-family: 'Nunito', sans-serif;
-  bottom: 7vh;
+  font-size: 1.9em;
+  color: #09a868;
+  font-family: 'Alkatra';
+  bottom: 3vh;
   transform: translateY(150px);
   z-index: 100;
 }
@@ -637,6 +676,19 @@ button:hover i {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-4em);
+  transition-delay: 0.2s;
+}
+[data-inViewport="slideLeft"].is-inViewport {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0em);
+}
+/* For Slide In from right */
+[data-inViewport="slideright"] {
+  transition: 1.5s cubic-bezier(0.4, 1, 0.22, 1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(4em);
   transition-delay: 0.2s;
 }
 [data-inViewport="slideLeft"].is-inViewport {
